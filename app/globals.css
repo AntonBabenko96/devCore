@@ -1,6 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Inconsolata&family=Inter&family=Poppins:wght@300;400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata&family=Inter:wght@400;600&family=Poppins:wght@300;400;600&family=Russo+One&display=swap');
+
 
 body {
     background: radial-gradient(85.37% 120.12% at 50.04% -11.47%, #014959 0%, #000C0F 100%) ;
     font-family: Poppins;
+    overflow-x: hidden;
+    
 }
+

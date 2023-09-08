@@ -1,0 +1,124 @@
+@keyframes move-arrows-left {
+    0% {
+        transform: translateX(-1000px);
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes move-arrows-right {
+    0% {
+        opacity: 0;
+        transform: translateX(+1000px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes move-top {
+    0% {
+        transform: translateY(+2000px) ;
+    }
+
+    100% {
+        transform: translateY(0) ;
+
+    }
+}
+
+.ourBenifits {
+    width: 100vw;
+    height: 100vh;
+    background-color: #fff;
+    display: flex;
+    align-items: center ;
+    justify-content: center;
+    margin-top: 55px;
+    
+}
+
+
+
+.wrapper {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    z-index: 120;
+}
+
+.decorationFirst {
+    bottom:-40px;
+    left: 40px;
+    position: absolute;
+    height: 80vh;
+    width: 400px;
+    border-bottom: 10px solid #E0F4F5;
+    border-left: 10px solid #E0F4F5;
+    animation: move-arrows-left 3s ease-in-out forwards;
+}
+
+.decorationSecond {
+    top: 80px;
+    right: 0;
+    position: absolute;
+    height: 80vh;
+    width: 400px;
+    border-right: 10px solid #015366;
+    border-top: 10px solid #015366;
+    animation: move-arrows-right 3s ease-in-out forwards;
+}
+
+.title {
+    color: #fff;
+        font-family: Russo One;
+        font-size: 64px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        text-shadow: 0px 0px 10px #051C23;
+        margin-right: 40px;
+        margin: 0 0 0 auto;
+        animation: move-arrows-right 3s ease-in-out forwards;
+}
+
+.secondTitle {
+    width: 100%;
+    font-family: Russo One;
+        font-size: 32px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+}
+
+.img {
+    padding: 10px;
+    background-color:#E0F4F5 ;
+    border-radius: 20px;
+    margin-right: 50px;
+}
+
+.text {
+    width: 600px;
+    color: #000;
+        font-family: Inconsolata;
+        font-size: 22px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 100%;
+        margin: 0;
+}
+
+.itemInfo {
+display: flex;
+
+ flex-wrap: wrap;
+}
+

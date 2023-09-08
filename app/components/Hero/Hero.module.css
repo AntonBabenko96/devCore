@@ -24,9 +24,11 @@
 0% {
         transform: rotate(45deg);
     }
+     
       
     100% {
-        transform: rotate(405deg);
+        transform: rotate(1125deg);
+       
      
     }
 }
@@ -46,14 +48,17 @@
     position: relative;
     display: flex;
     justify-content: center;
-    height: 100vh;
+    height: calc(100vh - 76px);
     width: 100%;
+    z-index: 30;
 }
+
+
 
 .arrowLeft {
     opacity: 0;
-    width: 330px;
-    height: 656px;
+    width: calc(80vh / 1.98);
+    height: 80vh;
     background-image: url('../../../public/arrowLeft.png');
     background-size: cover;
     margin: 0 10px;  
@@ -63,8 +68,8 @@
 
 .arrowRight {
     opacity: 0;
-    width: 330px;
-    height: 656px;
+    width: calc(80vh / 1.98);
+    height: 80vh;
     background-image: url('../../../public/arrowRight.png');
     background-size: cover;
     margin: 0 10px;
@@ -73,11 +78,10 @@
 }
 
 .square {
-    margin-top: 280px;
-    width: 100px;
-    height: 100px;
+    margin-top: calc(100vh / 3);
+    width: 90px;
+    height: 90px;
     background-color: #020F13;
-    filter: drop-shadow(0px 4px 4px #000);
     border: 1px solid #000;
     animation: spin 3s linear forwards;
 }
@@ -87,8 +91,9 @@
     position: absolute;
     top: 0;
     left: 50%;
-    z-index: 100;
+    z-index: 50;
     animation: move-top 4s ease-in-out forwards;
+    height: 100vh;
 }
 
 .text {
@@ -109,11 +114,13 @@
 .title {
     width: 100%;
     color: #FFF;
-    font-family: Poppins;
+    font-family: Russo One;;
     font-size: 96px;
     font-weight: 600;
-    margin-top: 174px;
+    margin-top: 180px;
     text-align: center;
+    z-index: 60;
+  
 }
 
 .btn {
@@ -128,9 +135,15 @@
     color: #FFF;
     font-size: 20px;
     font-weight: 400;
-    margin-top: 160px;
+    margin-top: 100px;
     margin-left: auto;
     margin-right: auto;
     cursor: pointer;
+
+
               
+}
+
+.btn:hover {
+    box-shadow: 0px 0px 10px white;
 }

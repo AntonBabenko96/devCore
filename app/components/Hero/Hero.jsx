@@ -1,7 +1,12 @@
+
+
 import styles from "./Hero.module.css";
 import Container from "../Container/Container";
 
+
 export default function Hero() {
+ 
+
   return (
     <div className={styles.hero}>
       <Container>

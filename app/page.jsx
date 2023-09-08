@@ -1,10 +1,11 @@
-import styles from "./page.module.css";
 import Hero from "./components/Hero/Hero";
+import OurBenifits from "./components/OurBenefits/OurBenefits";
 
 export default function Home() {
   return (
-    <main className={styles.main}>
+    <main>
       <Hero />
+      <OurBenifits />
     </main>
   );
 }
